@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>david carton</title>
+    <script>
+        const input = document.getElementById("textoUsuario");
+        const resultado = document.getElementById("resultado");
+        input.addEventListener("input", function() {
+        resultado.textContent = input.value;
+    });
+    </script>
+  </head>
+  <body>
+
+    <div>
+      <h1>Heading principal</h1>
+      <p>
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. <b>Mauris erat neque</b>, fringilla eget lacinia nec,
+        sodales vitae erat. Vestibulum ac porttitor felis. Donec risus sem,
+        viverra placerat fringilla id, congue eget enim.
+      </p>
+      <img src="./img/gandalf.jpg" alt="Gandalf" />
+    </div>
+
+    <div>
+      <h3>Heading secundario</h3>
+      <p>
+        <i>Duis dapibus tortor sit amet arcu lacinia hendrerit id a diam</i>.
+        Suspendisse eget orci id odio vestibulum semper nec rutrum diam.
+        Suspendisse laoreet odio id sapien aliquet ultricies.
+      </p>
+      <input type="text" id="textoUsuario" placeholder="Escribe aquí...">
+      <p id:"resultado"></p>
+    </div>
+
+  </body>
+</html>

@@ -4,16 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>david carton</title>
-    <script>
-        const input = document.getElementById("textoUsuario");
-        const resultado = document.getElementById("resultado");
-        input.addEventListener("input", function() {
-        resultado.textContent = input.value;
-    });
-    </script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
-
     <div>
       <h1>Heading principal</h1>
       <p>
@@ -32,9 +25,10 @@
         Suspendisse eget orci id odio vestibulum semper nec rutrum diam.
         Suspendisse laoreet odio id sapien aliquet ultricies.
       </p>
-      <input type="text" id="textoUsuario" placeholder="Escribe aquí...">
-      <p id:"resultado"></p>
+      <p>Lo que escribas aparecera abajo</p>
+      <input type="text" id="textoUsuario" placeholder="Escribe aquí..." />
+      <p id="resultado"></p>
     </div>
-
+    <script src="./script.js"></script>
   </body>
 </html>

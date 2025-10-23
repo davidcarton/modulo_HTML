@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  margin: 0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(111, 0, 255, 0.3);
+  width: 350px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+}
+
+.input-area {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+#addBtn {
+  background: #013aa5;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addBtn:hover {
+  background: #4456fa;
+  transform: scale(1.05);
+}
+
+#addBtn:active {
+  background: #4456fa;
+  color: #182848;
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#taskList li.completed {
+  text-decoration: line-through;
+  color: #b0bec5;
+  background: rgba(0, 183, 255, 0.3);
+}

@@ -37,7 +37,7 @@ function toggleTask(li) {
   saveTasks();
 
   if (li.classList.contains("completed")) {
-    sendNotification(`✅ Tarea completada: "${li.textContent}"`);
+    sendNotification(`Tarea completada: "${li.textContent}"`);
   }
 }
 
@@ -58,7 +58,7 @@ function sendNotification(message) {
   if (Notification.permission === "granted") {
     new Notification("Lista de tareas", {
       body: message,
-      icon: "https://cdn-icons-png.flaticon.com/512/992/992700.png",
+      icon: "https://img.icons8.com/?size=100&id=118955&format=png&color=000000",
     });
   }
 }
